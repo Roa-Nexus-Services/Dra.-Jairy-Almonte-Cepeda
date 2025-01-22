@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Jairy Almonte Cepeda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/Logo_icon.png" type="image/png">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img src="./images/Logo_icon.png" alt="Logo Icon" width="80px">
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="https://wa.me/18096351679" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/main_photo.png" alt="Foto Dra Almonte">
+                </div>
+                <div class="hero-text">
+                    <h5>Soy <span class="input">Médico Familiar</span></h5>
+                    <h1>Dra. Jairy Almonte Cepeda</h1>
+                    <br>
+                    <p> Desde mis inicios en la carrera tuve interés por querer ir mas allá, poder ayudar a las personas
+                        no solo a curar su enfermedad sino más bien a evitar que se enfermen. Lo que me motivó a
+                        estudiar Medicina general (UCATECI), y hacerme Magister en Medicina Familiar & Comunitaria
+                        (Hospital CENSAIDE).
+                        para continuar preparandome realicé un diplomado en Diabetología (UAPA).
+                    </p>
+
+                    <!--<div class="btn-group">
+                       <a href="#" class="btn active">Download CV</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>-->
+                    <br>
+                    <br>
+                    <div class="social">
+                        <a href="https://www.instagram.com/dra.jairyalmonte/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <center><div>
+        <p class="frase">La prevención es poder,<br> y cuidar de ti siempre es siempre la mejor decisión</p>
+        <br>
+        <br>
+        <br>
+        <span class="span"></span>
+    </div></center>
+    <center>
+        <div class="btn-group">
+            <a href="https://wa.me/18096351679" target="_blank" rel="noopener noreferrer" class="btn">Consultar</a>
+        </div>
+    </center>
+
+    <footer class="footer">
+		<nav class="nav">
+			<h4 class="nav__title">© 2025 Dra. Jairy Almonte Cepeda</h4>
+		</nav>
+
+		<div class="social">
+			<a href="#">
+				<img class="social__img" src="./images/Logo_icon.png" height="80" width="80" alt="Whatsapp">
+			</a>
+		</div>
+		<div class="more">
+			<a class="more__link" href="https://www.instagram.com/roanexus/">Tecnología de Roa Nexus</a>
+            <p></p>
+        </div>
+	</footer>
+    
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings: ["Médico Familiar & Comunitario;", "Diabetóloga"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
