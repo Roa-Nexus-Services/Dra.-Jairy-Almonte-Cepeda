@@ -183,66 +183,91 @@ nav .navlinks li a{
     color: #cb6ce6;
 }
 /* Respnosiv design & displaying navbar for small screen */
-@media(max-width:930px)
-{
-    nav .togglebtn{
-        display: initial;
+@media (max-width: 930px) {
+    /* Mostrar botón toggle */
+    nav .togglebtn {
+        display: block; /* Cambiado 'initial' por 'block' para consistencia */
     }
-    /* for toggle button**/
+
+    /* Estilo para el botón toggle al hacer clic */
     .click {
-        top:45px;
+        top: 45px;
+        position: relative;
     }
-    .click span{
+
+    .click span {
         position: absolute;
-        margin-top:12px
+        margin-top: 12px;
+        transition: all 0.3s ease-in-out;
     }
-    .click span:first-child{
-        transform: rotate(-40deg);
+
+    .click span:first-child {
+        transform: rotate(-45deg); /* Ajustado el ángulo */
     }
-    .click span:nth-child(2)
-    {
+
+    .click span:nth-child(2) {
         opacity: 0;
-        margin:0;
+        margin: 0;
     }
-    .click span:last-child{
+
+    .click span:last-child {
         transform: rotate(45deg);
-        top:0;
+        top: 0;
     }
-    nav .navlinks{
+
+    /* Navegación lateral (toggle menú) */
+    nav .navlinks {
         position: absolute;
-        top:110px;
-        right:-100%;
-        bottom: 0;
+        top: 110px;
+        right: -100%;
         width: 60%;
         height: 100vh;
         background-color: #ffffff;
         z-index: 3;
-        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
-        transition: 0.5s;
-        padding: 25px 0px;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: right 0.5s ease-in-out;
+        padding: 25px 15px; /* Ajuste de padding para dispositivos más pequeños */
     }
-    nav .navlinks li{
+
+    nav .navlinks li {
         display: block;
+        margin-bottom: 15px; /* Añadido margen entre elementos */
     }
-    nav .navlinks li a{
+
+    nav .navlinks li a {
         display: block;
-        margin-bottom: 15px;
         text-align: center;
+        font-size: 1rem; /* Ajustado tamaño de fuente */
     }
-    nav .navlinks.open{
-        right:0;
+
+    /* Mostrar menú al abrir */
+    nav .navlinks.open {
+        right: 0;
     }
 }
-@media(max-width:768px)
-{
-    .container{
+
+@media (max-width: 768px) {
+    .container {
         flex-direction: column;
-        padding-top:2rem
+        padding-top: 2rem;
+        align-items: center; /* Centrado para mejor diseño */
     }
-    .hero-text{
-        padding:40px 0px;
+
+    .hero-text {
+        padding: 40px 20px; /* Ajuste para mayor separación horizontal */
+        text-align: center; /* Texto centrado */
+    }
+
+    /* Ajuste adicional para botones o elementos */
+    nav .togglebtn {
+        font-size: 1.2rem;
+    }
+
+    nav .navlinks {
+        width: 75%; /* Más espacio en pantallas más pequeñas */
     }
 }
+
 
 
 .footer{
